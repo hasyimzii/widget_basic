@@ -81,182 +81,134 @@ class HomePage extends StatelessWidget {
                       SizedBox(
                         height: 16,
                       ),
-                      Row(
-                        children: [
-                          Image.asset(
-                            'assets/images/fr1.png',
-                            width: 55,
-                            height: 55,
+
+                      ListTile(
+                        contentPadding: EdgeInsets.only(left: 0.0, right: 0.0),
+                        leading: Image.asset(
+                          'assets/images/fr1.png',
+                          width: 55,
+                          height: 55,
+                        ),
+                        title: Text(
+                          'Irene',
+                          style: TextStyle(
+                            color: Color(0xFFFFFFFF),
+                            fontWeight: FontWeight.w500,
+                            fontSize: 16,
                           ),
-                          SizedBox(
-                            width: 15,
+                        ),
+                        subtitle: Text(
+                          'Hai, apa kabar kamu?',
+                          style: TextStyle(
+                            color: Color(0xFFB2B1B9),
+                            fontWeight: FontWeight.w300,
+                            fontSize: 13,
                           ),
-                          Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text(
-                                'Irene',
-                                style: TextStyle(
-                                  color: Color(0xFFFFFFFF),
-                                  fontWeight: FontWeight.w500,
-                                  fontSize: 16,
-                                ),
-                              ),
-                              Text(
-                                'Hai, apa kabar kamu?',
-                                style: TextStyle(
-                                  color: Color(0xFFB2B1B9),
-                                  fontWeight: FontWeight.w300,
-                                  fontSize: 13,
-                                ),
-                              ),
-                            ],
+                        ),
+                        trailing: Text(
+                          'Sekarang',
+                          style: TextStyle(
+                            color: Color(0xFFB2B1B9),
+                            fontWeight: FontWeight.w300,
+                            fontSize: 13,
                           ),
-                          Spacer(),
-                          Text(
-                            'Sekarang',
-                            style: TextStyle(
-                              color: Color(0xFFB2B1B9),
-                              fontWeight: FontWeight.w300,
-                              fontSize: 13,
-                            ),
-                          ),
-                        ],
+                        ),
                       ),
-                      SizedBox(
-                        height: 16,
+                      ListTile(
+                        contentPadding: EdgeInsets.only(left: 0.0, right: 0.0),
+                        leading: Image.asset(
+                          'assets/images/fr2.png',
+                          width: 55,
+                          height: 55,
+                        ),
+                        title: Text(
+                          'Steve',
+                          style: TextStyle(
+                            color: Color(0xFFFFFFFF),
+                            fontWeight: FontWeight.w500,
+                            fontSize: 16,
+                          ),
+                        ),
+                        subtitle: Text(
+                          'Aku ada job untukmu',
+                          style: TextStyle(
+                            color: Color(0xFFB2B1B9),
+                            fontWeight: FontWeight.w300,
+                            fontSize: 13,
+                          ),
+                        ),
+                        trailing: Text(
+                          '14:35',
+                          style: TextStyle(
+                            color: Color(0xFFB2B1B9),
+                            fontWeight: FontWeight.w300,
+                            fontSize: 13,
+                          ),
+                        ),
                       ),
-                      Row(
-                        children: [
-                          Image.asset(
-                            'assets/images/fr2.png',
-                            width: 55,
-                            height: 55,
+                      ListTile(
+                        contentPadding: EdgeInsets.only(left: 0.0, right: 0.0),
+                        leading: Image.asset(
+                          'assets/images/fr3.png',
+                          width: 55,
+                          height: 55,
+                        ),
+                        title: Text(
+                          'Lia',
+                          style: TextStyle(
+                            color: Color(0xFFFFFFFF),
+                            fontWeight: FontWeight.w500,
+                            fontSize: 16,
                           ),
-                          SizedBox(
-                            width: 15,
+                        ),
+                        subtitle: Text(
+                          'Baik, terima kasih.',
+                          style: TextStyle(
+                            color: Color(0xFFB2B1B9),
+                            fontWeight: FontWeight.w300,
+                            fontSize: 13,
                           ),
-                          Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text(
-                                'Steve',
-                                style: TextStyle(
-                                  color: Color(0xFFFFFFFF),
-                                  fontWeight: FontWeight.w500,
-                                  fontSize: 16,
-                                ),
-                              ),
-                              Text(
-                                'Aku ada job untukmu',
-                                style: TextStyle(
-                                  color: Color(0xFFB2B1B9),
-                                  fontWeight: FontWeight.w300,
-                                  fontSize: 13,
-                                ),
-                              ),
-                            ],
+                        ),
+                        trailing: Text(
+                          '14:10',
+                          style: TextStyle(
+                            color: Color(0xFFB2B1B9),
+                            fontWeight: FontWeight.w300,
+                            fontSize: 13,
                           ),
-                          Spacer(),
-                          Text(
-                            '14:35',
-                            style: TextStyle(
-                              color: Color(0xFFB2B1B9),
-                              fontWeight: FontWeight.w300,
-                              fontSize: 13,
-                            ),
-                          ),
-                        ],
+                        ),
                       ),
-                      SizedBox(
-                        height: 16,
-                      ),
-                      Row(
-                        children: [
-                          Image.asset(
-                            'assets/images/fr3.png',
-                            width: 55,
-                            height: 55,
+                      ListTile(
+                        contentPadding: EdgeInsets.only(left: 0.0, right: 0.0),
+                        leading: Image.asset(
+                          'assets/images/fr4.png',
+                          width: 55,
+                          height: 55,
+                        ),
+                        title: Text(
+                          'Michael',
+                          style: TextStyle(
+                            color: Color(0xFFFFFFFF),
+                            fontWeight: FontWeight.w500,
+                            fontSize: 16,
                           ),
-                          SizedBox(
-                            width: 15,
+                        ),
+                        subtitle: Text(
+                          'Besok aku akan mampir..',
+                          style: TextStyle(
+                            color: Color(0xFFB2B1B9),
+                            fontWeight: FontWeight.w300,
+                            fontSize: 13,
                           ),
-                          Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text(
-                                'Lia',
-                                style: TextStyle(
-                                  color: Color(0xFFFFFFFF),
-                                  fontWeight: FontWeight.w500,
-                                  fontSize: 16,
-                                ),
-                              ),
-                              Text(
-                                ' Baik, terima kasih.',
-                                style: TextStyle(
-                                  color: Color(0xFFB2B1B9),
-                                  fontWeight: FontWeight.w300,
-                                  fontSize: 13,
-                                ),
-                              ),
-                            ],
+                        ),
+                        trailing: Text(
+                          '10:15',
+                          style: TextStyle(
+                            color: Color(0xFFB2B1B9),
+                            fontWeight: FontWeight.w300,
+                            fontSize: 13,
                           ),
-                          Spacer(),
-                          Text(
-                            '14:10',
-                            style: TextStyle(
-                              color: Color(0xFFB2B1B9),
-                              fontWeight: FontWeight.w300,
-                              fontSize: 13,
-                            ),
-                          ),
-                        ],
-                      ),
-                      SizedBox(
-                        height: 16,
-                      ),
-                      Row(
-                        children: [
-                          Image.asset(
-                            'assets/images/fr4.png',
-                            width: 55,
-                            height: 55,
-                          ),
-                          SizedBox(
-                            width: 15,
-                          ),
-                          Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text(
-                                'Michael',
-                                style: TextStyle(
-                                  color: Color(0xFFFFFFFF),
-                                  fontWeight: FontWeight.w500,
-                                  fontSize: 16,
-                                ),
-                              ),
-                              Text(
-                                'Besok aku akan mampir..',
-                                style: TextStyle(
-                                  color: Color(0xFFB2B1B9),
-                                  fontWeight: FontWeight.w300,
-                                  fontSize: 13,
-                                ),
-                              ),
-                            ],
-                          ),
-                          Spacer(),
-                          Text(
-                            '10:15',
-                            style: TextStyle(
-                              color: Color(0xFFB2B1B9),
-                              fontWeight: FontWeight.w300,
-                              fontSize: 13,
-                            ),
-                          ),
-                        ],
+                        ),
                       ),
                       SizedBox(
                         height: 30,
@@ -274,97 +226,73 @@ class HomePage extends StatelessWidget {
                       SizedBox(
                         height: 16,
                       ),
-                      Row(
-                        children: [
-                          Image.asset(
-                            'assets/images/gr1.png',
-                            width: 55,
-                            height: 55,
+                      ListTile(
+                        contentPadding: EdgeInsets.only(left: 0.0, right: 0.0),
+                        leading: Image.asset(
+                          'assets/images/gr1.png',
+                          width: 55,
+                          height: 55,
+                        ),
+                        title: Text(
+                          'Alumni SMAN 2',
+                          style: TextStyle(
+                            color: Color(0xFFFFFFFF),
+                            fontWeight: FontWeight.w500,
+                            fontSize: 16,
                           ),
-                          SizedBox(
-                            width: 15,
+                        ),
+                        subtitle: Text(
+                          'Kapan kita reuni?',
+                          style: TextStyle(
+                            color: Color(0xFFB2B1B9),
+                            fontWeight: FontWeight.w300,
+                            fontSize: 13,
                           ),
-                          Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text(
-                                'Alumni SMAN 2',
-                                style: TextStyle(
-                                  color: Color(0xFFFFFFFF),
-                                  fontWeight: FontWeight.w500,
-                                  fontSize: 16,
-                                ),
-                              ),
-                              Text(
-                                'Kapan kita reuni?',
-                                style: TextStyle(
-                                  color: Color(0xFFB2B1B9),
-                                  fontWeight: FontWeight.w300,
-                                  fontSize: 13,
-                                ),
-                              ),
-                            ],
+                        ),
+                        trailing: Text(
+                          '15:00',
+                          style: TextStyle(
+                            color: Color(0xFFB2B1B9),
+                            fontWeight: FontWeight.w300,
+                            fontSize: 13,
                           ),
-                          Spacer(),
-                          Text(
-                            '15:00',
-                            style: TextStyle(
-                              color: Color(0xFFB2B1B9),
-                              fontWeight: FontWeight.w300,
-                              fontSize: 13,
-                            ),
-                          ),
-                        ],
+                        ),
                       ),
-                      SizedBox(
-                        height: 16,
-                      ),
-                      Row(
-                        children: [
-                          Image.asset(
-                            'assets/images/gr2.png',
-                            width: 55,
-                            height: 55,
+                      ListTile(
+                        contentPadding: EdgeInsets.only(left: 0.0, right: 0.0),
+                        leading: Image.asset(
+                          'assets/images/gr2.png',
+                          width: 55,
+                          height: 55,
+                        ),
+                        title: Text(
+                          'Bani Wachid',
+                          style: TextStyle(
+                            color: Color(0xFFFFFFFF),
+                            fontWeight: FontWeight.w500,
+                            fontSize: 16,
                           ),
-                          SizedBox(
-                            width: 15,
+                        ),
+                        subtitle: Text(
+                          'Nanti malam makan2',
+                          style: TextStyle(
+                            color: Color(0xFFB2B1B9),
+                            fontWeight: FontWeight.w300,
+                            fontSize: 13,
                           ),
-                          Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text(
-                                'Bani Wachid',
-                                style: TextStyle(
-                                  color: Color(0xFFFFFFFF),
-                                  fontWeight: FontWeight.w500,
-                                  fontSize: 16,
-                                ),
-                              ),
-                              Text(
-                                'Nanti malam makan2',
-                                style: TextStyle(
-                                  color: Color(0xFFB2B1B9),
-                                  fontWeight: FontWeight.w300,
-                                  fontSize: 13,
-                                ),
-                              ),
-                            ],
+                        ),
+                        trailing: Text(
+                          '11:22',
+                          style: TextStyle(
+                            color: Color(0xFFB2B1B9),
+                            fontWeight: FontWeight.w300,
+                            fontSize: 13,
                           ),
-                          Spacer(),
-                          Text(
-                            '11:22',
-                            style: TextStyle(
-                              color: Color(0xFFB2B1B9),
-                              fontWeight: FontWeight.w300,
-                              fontSize: 13,
-                            ),
-                          ),
-                        ],
+                        ),
                       ),
                       SizedBox(
                         height: 30,
                       ),
-
                     ],
                   ),
                 )
