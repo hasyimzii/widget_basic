@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'HomePage.dart';
+import 'views/chit_chat.dart';
 
 void main() {
   runApp(MyApp());
@@ -13,7 +13,11 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         fontFamily: 'Poppins',
       ),
-      home: HomePage(),
+      initialRoute: '/chit_chat',
+      routes: {
+        '/chit_chat' : (context) => ChitChat(),
+        // '/feedback_form' : (context) => FeedbackForm(),
+      },
     );
   }
 }
