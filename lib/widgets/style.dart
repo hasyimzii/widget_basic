@@ -28,3 +28,14 @@ TextStyle subtitleListTextStyle = TextStyle(
   fontWeight: FontWeight.w300,
   fontSize: 13,
 );
+
+TextStyle inputFieldTextStyle = TextStyle(
+  color: whiteColor,
+  fontSize: 14,
+);
+
+TextStyle inputHintTextStyle = TextStyle(
+  color: semiWhiteColor,
+  fontWeight: FontWeight.w300,
+  fontSize: 14,
+);

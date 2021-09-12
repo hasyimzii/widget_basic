@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../widgets/style.dart';
+import 'package:widget_basic/widgets/style.dart';
 
 class ScaffoldTheme extends StatelessWidget {
   final String title;
@@ -27,7 +27,13 @@ class ScaffoldTheme extends StatelessWidget {
         elevation: 0.0,
       ),
       floatingActionButton: this.floatingActionButton,
-      body: this.body,
+      body: SafeArea(
+        child: Center(
+          child: SingleChildScrollView(
+            child: this.body,
+          ),
+        ),
+      ),
     );
   }
 }

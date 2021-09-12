@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'views/chit_chat.dart';
+import 'views/biodata_form.dart';
 
 void main() {
   runApp(MyApp());
@@ -13,10 +14,10 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         fontFamily: 'Poppins',
       ),
-      initialRoute: '/chit_chat',
+      initialRoute: '/biodata_form',
       routes: {
         '/chit_chat' : (context) => ChitChat(),
-        // '/feedback_form' : (context) => FeedbackForm(),
+        '/biodata_form' : (context) => BiodataForm(),
       },
     );
   }

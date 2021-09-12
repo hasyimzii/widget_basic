@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../widgets/style.dart';
+import 'package:widget_basic/widgets/style.dart';
 
 class ContentContainer extends StatelessWidget {
   final List<Widget> children;
