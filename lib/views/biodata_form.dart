@@ -4,6 +4,7 @@ import '../widgets/scaffold_theme.dart';
 import '../widgets/text_field_input.dart';
 import '../widgets/radio_input.dart';
 import '../widgets/checkbox_input.dart';
+import '../widgets/datetime_picker.dart';
 import '../widgets/submit_button.dart';
 
 class BiodataForm extends StatefulWidget {
@@ -18,6 +19,7 @@ class _BiodataFormState extends State<BiodataForm> {
   String _namaLengkap = '';
   String _noTelepon = '';
   String _jenisKelamin = '';
+  String _dateText = 'yyyy-mm-dd';
   DateTime _initialDate = DateTime.now();
   Map check = {
     'Java': false,
@@ -123,27 +125,22 @@ class _BiodataFormState extends State<BiodataForm> {
                     'Tanggal Lahir',
                     style: titleListTextStyle,
                   ),
-                  ListTile(
-                    leading: IconButton(
-                      icon: Icon(Icons.event),
-                      color: semiWhiteColor,
-                      onPressed: () {
-                        showDatePicker(
-                          context: context,
-                          initialDate: _initialDate,
-                          firstDate: DateTime(1980),
-                          lastDate: DateTime.now(),
-                        ).then((value) {
-                          setState(() {
-                            _initialDate = value!;
-                          });
+                  SizedBox(height: 10),
+                  DatetimePicker(
+                    initialValue: _dateText,
+                    onTap: () {
+                      showDatePicker(
+                        context: context,
+                        initialDate: _initialDate,
+                        firstDate: DateTime(1980),
+                        lastDate: DateTime.now(),
+                      ).then((value) {
+                        setState(() {
+                          _initialDate = value!;
+                          _dateText = '${_initialDate.toLocal()}'.split(' ')[0];
                         });
-                      },
-                    ),
-                    title: Text(
-                      '${_initialDate.toLocal()}'.split(' ')[0],
-                      style: inputFieldTextStyle,
-                    ),
+                      });
+                    },
                   ),
                   SizedBox(height: 16),
                   Text(
@@ -204,7 +201,8 @@ class _BiodataFormState extends State<BiodataForm> {
                           ),
                           builder: (context) {
                             return Padding(
-                              padding: const EdgeInsets.symmetric(horizontal: 20),
+                              padding:
+                                  const EdgeInsets.symmetric(horizontal: 20),
                               child: Wrap(
                                 direction: Axis.vertical,
                                 spacing: 10,
