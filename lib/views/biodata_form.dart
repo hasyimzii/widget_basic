@@ -19,7 +19,7 @@ class _BiodataFormState extends State<BiodataForm> {
   String _namaLengkap = '';
   String _noTelepon = '';
   String _jenisKelamin = '';
-  String _dateText = 'yyyy-mm-dd';
+  String _dateText = 'dd/mm/yyyy';
   DateTime _initialDate = DateTime.now();
   Map check = {
     'Java': false,
@@ -137,7 +137,7 @@ class _BiodataFormState extends State<BiodataForm> {
                       ).then((value) {
                         setState(() {
                           _initialDate = value!;
-                          _dateText = '${_initialDate.toLocal()}'.split(' ')[0];
+                          _dateText = "${value.day}/${value.month}/${value.year}";
                         });
                       });
                     },

@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         fontFamily: 'Poppins',
       ),
-      initialRoute: '/biodata_form',
+      initialRoute: '/chit_chat',
       routes: {
         '/chit_chat' : (context) => ChitChat(),
         '/biodata_form' : (context) => BiodataForm(),
